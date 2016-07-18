@@ -1,0 +1,33 @@
+.about-item h3 {
+  font-size: 80px;
+  margin: 0 0 15px 10px;
+  font-weight: bold;
+  color: $site-color;
+  span {
+    font-size: 20px;
+  }
+}
+
+#about .about-icon {
+  height: 120px;
+}
+
+#about .about-item {
+  line-height: 3;
+}
+
+@media (min-width: 768px) {
+  #about .about-item:not(:first-child) h5 {
+     line-height: 3;
+   }
+
+  #about .about-item:first-child h5 {
+    line-height: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  #about .about-icon {
+    height: 100px;
+  }
+}

@@ -1,0 +1,469 @@
+/*================================================
+　　　　* position
+================================================*/
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative-sm {
+  @media (max-width: 767px) {
+    position: relative;
+  }
+}
+
+.right-0 {
+  right: 0;
+}
+
+/*================================================
+　　　　* display
+================================================*/
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.block-sm {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.block-md {
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.show-sm {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.hide-sm {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+/*================================================
+　　　　* float
+================================================*/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/*================================================
+　　　　* size
+================================================*/
+.width-full {
+  width: 100%;
+}
+
+.height-full {
+  height: 100%;
+}
+
+/*================================================
+　　　　* margin
+================================================*/
+.margin-0 {
+  margin: 0 !important;
+}
+
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
+.margin-top-60 {
+  margin-top: 60px !important;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-right-20 {
+  margin-right: 20px !important;
+}
+
+.margin-left-10 {
+  margin-left: 10px !important;
+}
+
+.margin-left-10-md {
+  @media (min-width: 768px) {
+    margin-left: 10px !important;
+  }
+}
+
+.margin-top-10-sm {
+  @media (max-width: 767px) {
+    margin-top: 10px !important;
+  }
+}
+
+.margin-top-30-sm {
+  @media (max-width: 767px) {
+    margin-top: 30px !important;
+  }
+}
+
+/*================================================
+　　　　* padding
+================================================*/
+.padding-0 {
+  padding: 0 !important;
+}
+
+.padding-20 {
+  padding: 20px !important;
+}
+
+.padding-40 {
+  padding: 40px !important;
+}
+
+.padding-60 {
+  padding: 60px !important;
+}
+
+.padding-right-10 {
+  padding-right: 10px !important;
+}
+
+.padding-right-15 {
+  padding-right: 15px !important;
+}
+
+.padding-right-30 {
+  padding-right: 30px !important;
+}
+
+.padding-right-60 {
+  padding-right: 60px !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px !important;
+}
+
+.padding-left-10 {
+  padding-left: 10px !important;
+}
+
+.padding-left-15 {
+  padding-left: 15px !important;
+}
+
+.padding-left-30 {
+  padding-left: 30px !important;
+}
+
+.padding-left-60 {
+  padding-left: 60px !important;
+}
+
+.padding-20-sm {
+  padding: 20px !important;
+}
+
+.padding-right-40-sm {
+  padding-right: 40px !important;
+}
+
+.padding-left-40-sm {
+  padding-left: 40px !important;
+}
+
+/*================================================
+　　　　* line
+================================================*/
+.line-height-30 {
+  line-height: 30px;
+}
+
+/*================================================
+　　　　* font
+================================================*/
+.number-font {
+  font-family: 'Open Sans', 'Hiragino Sans', sans-serif;
+}
+
+.font-small {
+  font-size: 0.75em;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+/*================================================
+　　　　* border
+================================================*/
+.border {
+  border: 1px solid #ddd;
+}
+
+.border-top {
+  border-top: 1px solid #ddd;
+}
+
+.border-right {
+  border-right: 1px solid #ddd;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+.border-left {
+  border-left: 1px solid #ddd;
+}
+
+.underline {
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+/*================================================
+　　　　* text
+================================================*/
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.text-left-md {
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.text-right-md {
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.text-center-md {
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+}
+
+.text-center-sm {
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+/*================================================
+　　　　* list
+================================================*/
+ul.square {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/*================================================
+　　　　* page
+================================================*/
+.page-inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/*================================================
+　　　　* section
+================================================*/
+.section-inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/*================================================
+　　　　* button
+================================================*/
+.button {
+  display: inline-block;
+  padding: 15px 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: rgba(0,0,0,0);
+  font-size: 0.875em;
+  font-weight: 600;
+  border: 2px solid;
+  border-radius: 2px;
+  text-decoration: none !important;
+  -webkit-transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+  -o-transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+  cursor: pointer;
+}
+
+.button > small {
+  display: block;
+  font-size: 10px;
+  opacity: .85;
+}
+
+.button-round {
+  border-radius: 27.5px;
+}
+
+/*================================================
+　　　　* image
+================================================*/
+.background-center {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-contain {
+  background-size: contain;
+}
+
+.image-medium {
+  height: 280px;
+}
+
+.image-container {
+  min-height: 200px;
+  overflow: hidden;
+}
+
+/*================================================
+　　　　* diamond
+================================================*/
+.diamond {
+  width: 62px;
+  height: 62px;
+  margin: 13px auto;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.diamond > .diamond-inner {
+  width: 88px;
+  height: 88px;
+  margin: -13px 0 0 -13px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.diamond-image {
+  width: 120px;
+  height: 120px;
+  margin: 25px auto;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.diamond-image > div {
+  width: 170px;
+  height: 170px;
+  margin: -25px 0 0 -25px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/*================================================
+　　　　* icon
+================================================*/
+.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.round-icon {
+  border-radius: 50%;
+}
+
+.border-icon {
+  border: 1px solid #fff;
+}
+
+/*================================================
+　　　　* caption
+================================================*/
+.caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px 25px;
+  background-color: $site-color-light;
+}
+
+/*================================================
+　　　　* utilities
+================================================*/
+.absolute-fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

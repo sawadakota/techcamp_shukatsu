@@ -1,0 +1,16 @@
+#intercom-container .intercom-launcher {
+  left: 60px !important;
+}
+
+#intercom-container .intercom-launcher-hovercard {
+  right: auto!important;
+}
+
+#intercom-container .intercom-sheet {
+  left: 0;
+}
+
+iframe[name='google_conversion_frame'] {
+  position: absolute;
+  height: 0;
+}

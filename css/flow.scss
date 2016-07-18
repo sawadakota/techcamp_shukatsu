@@ -1,0 +1,24 @@
+.flow-item:not(:first-child) {
+  margin-top: 40px;
+}
+
+.flow-item .diamond-inner {
+  padding: 22px 0;
+  line-height: 1;
+  font-family: "Avenir Next Condensed", sans-serif !important;
+  font-weight: 500;
+}
+
+.flow-item .flow-number strong {
+  font-size: 28px;
+}
+
+.flow-item .flow-content {
+  width: calc(100% - 110px);
+}
+
+@media (max-width: 767px) {
+  .flow-item .flow-content {
+    width: 100%;
+  }
+}

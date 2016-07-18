@@ -1,0 +1,168 @@
+/*================================================
+　　　　* element
+================================================*/
+body, html {
+  color: #333;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: color .4s ease;
+  -o-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+a:hover {
+  color: $site-color;
+  text-decoration: none;
+}
+
+/*================================================
+　　　　* text color
+================================================*/
+.text-color-white {
+  color: #fff !important;
+}
+
+.text-color-primary {
+  color: $site-color;
+}
+
+/*================================================
+　　　　* background color
+================================================*/
+.bg-color-white {
+  background-color: #fff
+}
+
+.bg-color-lightgray {
+  background-color: #f9f9f9
+}
+
+.bg-color-gray {
+  background-color: #f1f1f1;
+}
+
+.bg-color-black {
+  background-color: #282f35;
+}
+
+.bg-color-primary {
+  background-color: $site-color
+}
+
+/*================================================
+　　　　* translucent
+================================================*/
+.translucent-black {
+  background-color: rgba(0,0,0,.8);
+}
+
+/*================================================
+　　　　* border color
+================================================*/
+.border-primary {
+  border-color: $site-color;
+}
+
+/*================================================
+　　　　* button
+================================================*/
+@mixin button($color, $color-light, $text-color: #fff) {
+  &, &:active, &.active, &:active:hover, &.active:hover, &:active:focus, &.active:focus  {
+    color: $text-color;
+    background-color: $color;
+    border-color: $color;
+  }
+
+  &.button-border {
+    color: $color;
+  }
+
+  &:hover {
+    color: $text-color;
+    background-color: $color-light;
+    border-color: $color-light;
+  }
+
+  &.button-border:hover {
+    color: $color-light;
+  }
+}
+
+.button-primary {
+  @include button($site-color, $site-color-light)
+}
+
+.button-accent {
+  @include button($accent-color, $accent-color-light)
+}
+
+.button-white {
+  @include button(#fff, rgb(245,245,245), $site-color)
+}
+
+.button-border, .button-border:hover {
+  background-color: rgba(0,0,0,0);
+}
+
+/*================================================
+　　　　* Header
+================================================*/
+.header-white {
+  background-color: #fff;
+  border-bottom: 1px solid #F5F5F5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header-white .nav li > a:hover {
+  color: $site-color;
+  background-color: transparent;
+}
+
+.header-white .nav li > a.active {
+  color: $site-color;
+}
+
+.header.narrow .header-inner {
+  background-color: #fff;
+}
+
+.header.narrow .menu-list {
+  background-color: #fff;
+}
+
+.header.wide.translucent-header {
+  background-color: transparent;
+  border-bottom: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+.header.wide.translucent-header .logo {
+  display: none;
+}
+
+.header.wide.translucent-header .logo-translucent {
+  display: inline-block;
+}
+
+.header.wide.translucent-header .button-primary {
+  display: none;
+}
+
+.header.wide.translucent-header .button-translucent {
+  display: inline-block;
+}
+
+// .translucent-header.narrow {
+//   background-color: #fff;
+// }
+
+/*================================================
+　　　　* Heading
+================================================*/
+.heading-block h2 {
+  color: $site-color;
+}

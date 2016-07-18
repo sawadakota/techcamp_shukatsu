@@ -1,0 +1,38 @@
+#guarantee .heading {
+  margin-bottom: 50px;
+}
+
+#guarantee .heading h2 {
+  padding: 10px;
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/*#guarantee .icon-container {
+  float: left;
+  width: 70px;
+}*/
+
+/*#guarantee .icon-container img {
+  width: 50px;
+}*/
+
+#guarantee .text-container {
+  float: left;
+  width: calc(100% - 70px);
+}
+
+#guarantee .text-container h4 {
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 767px) {
+  /*#guarantee .icon-container {
+    width: 100%;
+  }*/
+
+  #guarantee .text-container {
+    width: 100%;
+  }
+}

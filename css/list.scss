@@ -1,0 +1,58 @@
+.list-item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.list-item .title, .list-item .content {
+  padding: 10px 15px;
+}
+
+.list-item .title {
+  letter-spacing: 0.05em;
+  font-size: 16px;
+}
+
+.list-item .content {
+  font-size: 14px;
+}
+
+.list-item p {
+  margin-bottom: 0;
+}
+
+.list-item strong {
+  letter-spacing: 0.05em;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.list-item .square-list .text {
+  float: left;
+  margin-left: 10px;
+  line-height: 66px;
+}
+
+.list-item .square-box {
+  float: left;
+  width: 66px;
+  height: 66px;
+  line-height: 66px;
+  letter-spacing: 0.2em;
+  background-color: $site-color;
+  color: #fff;
+  text-align: center;
+}
+
+.list-item .line-height-two {
+  padding: 13px 0; 
+  line-height: 20px;
+}
+
+@media (max-width: 767px) {
+  .list-item strong {
+    font-size: 1.2em;
+  }
+
+  .list-item .square-list:first-child {
+    margin-bottom: 10px
+  }
+}

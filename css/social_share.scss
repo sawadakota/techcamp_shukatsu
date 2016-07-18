@@ -1,0 +1,18 @@
+.social-share {
+  display: inline-block;
+
+  li {
+    float: left;
+  }
+
+  li:nth-child(2) {
+    margin-top: 4px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .social-share li:nth-child(2) {
+    margin-top: 1px;
+  }
+}

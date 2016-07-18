@@ -1,0 +1,51 @@
+.heading-block {
+  margin-bottom: 60px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.heading-block h5 {
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.heading-block h2 {
+  margin-bottom: 10px;
+  font-family: "Avenir Next Condensed", sans-serif !important;
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.heading-block p {
+  font-size: 0.9em;
+}
+
+.page-heading-block {
+  margin-bottom: 60px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.page-heading-block:after {
+  content: "";
+  display: block;
+  width: 4em;
+  margin: 0 auto;
+  border-bottom: 0.5px solid $site-color;
+}
+
+.page-heading-block h4 {
+  letter-spacing: 2px;
+  text-indent: 2px;
+}
+
+.page-heading-block p {
+  font-size: 0.9em;
+}

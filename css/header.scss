@@ -1,0 +1,135 @@
+$height: 68px;
+$logo-height: 20px;
+
+.header {
+  height: $height;
+  width: 100%;
+  -webkit-transition: height .4s ease, opacity .3s ease;
+  -o-transition: height .4s ease, opacity .3s ease;
+  transition: height .4s ease, opacity .3s ease;
+  z-index: 1000;
+}
+
+/*================================================
+　　　　* Common
+================================================*/
+.header .logo {
+  display: block;
+}
+
+.header .logo-translucent {
+  display: none;
+}
+
+.header .logo, .header .logo-translucent {
+  padding-top: ($height - $logo-height) / 2;
+}
+
+.header .logo > img, .header .logo-translucent > img {
+  height: $logo-height;
+  vertical-align: top;
+}
+
+.header .header-inner {
+  background-color: inherit;
+}
+
+.header .menu-button {
+  margin-top: 13px;
+  padding: 10px 15px;
+}
+
+.header .menu-item > .menu-item-link {
+  display: block;
+  letter-spacing: 1px;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.header .action-btn > .button {
+  margin-top: 12.5px;
+  margin-left: 10px;
+  padding: 10px 15px;
+}
+
+.header .button-translucent {
+  display: none;
+}
+
+/*================================================
+　　　　* When Wide
+================================================*/
+.header.wide .header-container {
+  position: relative;
+}
+
+.header.wide .menu-button {
+  display: none;
+}
+
+.header.wide .menu-list {
+  top: 0;
+  right: 0;
+}
+
+.header.wide .menu-list > .container {
+  width: 100%;
+}
+
+.header.wide .menu-item {
+  float: left;
+}
+
+.header.wide .menu-item > .menu-item-link {
+  padding: ($height - 22px) / 2 10px;
+}
+
+/*================================================
+　　　　* When Narrow
+================================================*/
+.header.narrow .header-inner {
+    z-index: 999;
+}
+.header.narrow .menu-list {
+  top: $height;
+  right: 0;
+  left: 0;
+}
+
+.header.narrow .menu-item > .menu-item-link {
+  padding: 15px 0;
+}
+
+.header.narrow .action-btn {
+  display: none;
+}
+
+/*================================================
+　　　　* Page Header
+================================================*/
+.page-header {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.page-header .inner {
+  padding: $height + 80px 0 80px;
+}
+
+.page-header .header-title-container{
+  margin-bottom: 25px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 4em;
+    margin: 25px auto 0;
+    border-bottom: 1px dotted #fff;
+  }
+}
+
+.page-header h1 {
+  text-transform: uppercase;
+}
